@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Advanced Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Calculator</div>
+        <ul class="modes">
+            <li data-mode="basic" class="active">Basic</li>
+            <li data-mode="casio">Casio</li>
+        </ul>
+        <div class="theme-select">
+            
+            <select id="theme">
+                <option value="light" selected>Light</option>
+                <option value="dark">Dark</option>
+            </select>
+        </div>
+    </nav>
+
+    <!-- Calculator Wrapper with Border Box -->
+    <div class="calculator-wrapper">
+        <div class="calculator-container">
+            <input type="text" class="calculator-display" id="display" disabled>
+            <div class="calculator-buttons" id="calculator-buttons"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made by Velaga Yugandhar | 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
